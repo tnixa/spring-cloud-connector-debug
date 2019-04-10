@@ -15,7 +15,7 @@ bx cf push -b java_buildpack -p target/testapp-0.0.1-SNAPSHOT.jar YourAppname
 ```
 
 ## Verify
-1. navigate to http://YourAppname.mybluemix.net/test
+1. navigate to http://YourAppname.mybluemix.net/vcap or /infos
 2. check log: 
 ```
 bx cf logs YourAppname --recent
