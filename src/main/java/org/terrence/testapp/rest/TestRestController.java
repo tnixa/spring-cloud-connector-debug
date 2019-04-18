@@ -18,7 +18,6 @@ public class TestRestController {
     return System.getenv("VCAP_SERVICES");
   }
 
-  // return Service Info
   private Cloud getCloud() {
     try {
       CloudFactory cloudFactory = new CloudFactory();
@@ -28,6 +27,7 @@ public class TestRestController {
     }
   }
 
+  // return Service Info
   @GetMapping("/infos")
   public String getInfos() {
     Cloud cloud = getCloud();
